@@ -32,12 +32,12 @@ search_anytwo(X, cons(_, Xs)) :- search_anytwo(X, Xs).
 
 % ********** PART 2 **********
 
-%%% size (List , Size )
+% size (List , Size )
 % Size will contain the number of elements in List , written using notation zero , s( zero ), s(s( zero ))..
 size(nil, zero).
 size(cons(_, T), s(S)) :- size(T, S).
 
-%max(List , Max)
+% max(List , Max)
 % Max is the biggest element in List
 % Suppose the list has at least one element
 max(nil, TempMax, TempMax).
